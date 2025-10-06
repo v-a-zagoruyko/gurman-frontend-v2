@@ -1,0 +1,24 @@
+{
+  "name": "gurman-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.15.3",
+    "@tailwindcss/vite": "^4.1.14",
+    "lodash-es": "^4.17.21",
+    "solid-js": "^1.9.9",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.2",
+    "vite": "^7.1.7",
+    "vite-plugin-solid": "^2.11.8",
+    "vite-plugin-solid-svg": "^0.8.1"
+  }
+}
