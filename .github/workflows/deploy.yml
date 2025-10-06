@@ -29,13 +29,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to server
-        uses: appleboy/ssh-action@v0.1.6
+      - name: Upload dist to server
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          passphrase: ""
-          source: "dist/"
+          source: "dist/*"
           target: "/srv/gurman-frontend/dist"
