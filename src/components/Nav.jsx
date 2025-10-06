@@ -11,7 +11,7 @@ export function Nav() {
   };
 
   return (
-    <nav class="fixed w-full top-0 bg-white">
+    <nav class="fixed w-full top-0 z-999 bg-white">
       <div class="max-w-[1350px] h-[80px] mx-auto px-[16px] sm:px-[32px] flex flex-row items-center sm:space-between">
         <A
           href="/"

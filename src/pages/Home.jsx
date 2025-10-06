@@ -91,6 +91,7 @@ export function Home() {
       </article>
       <div class="w-full">
         <iframe
+          title="Карта Yandex"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A3837c9fbf8dc43bfd3735dca284c9546fc5bd60de4083a7ed5d093112dc774f3&amp;source=constructor"
           width="100%"
           height="400"

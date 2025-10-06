@@ -82,6 +82,7 @@ button:hover {
 .nav-mobile {
   position: absolute;
   top: 80px;
+  z-index: 999;
   padding: 16px;
   width: 100%;
   height: calc(100vh - 80px);
