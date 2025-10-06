@@ -36,9 +36,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
-        passphrase: ''
-        script: |
-          rm -rf /srv/gurman-frontend/dist/*
+          passphrase: ''
+          script: |
+            rm -rf /srv/gurman-frontend/dist/*
 
       - name: Upload dist to server
         uses: appleboy/scp-action@v0.1.7
