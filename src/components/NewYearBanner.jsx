@@ -5,17 +5,18 @@ export function NewYearBanner() {
     <div class="news-year-banner relative w-full mb-[16px] sm:mb-[32px] py-[16px] sm:py-[-32px] bg-neutral-50">
       <div class="article h-full pt-[16px] sm:pt-[32px]">
         <div class="h-full flex flex-col items-center justify-center text-center text-white">
-          <span class="mb-[12px] text-[30px] sm:text-[40px] font-semibold">
-            Дорогие друзья!
+          <span class="mb-[12px] text-[44px] sm:text-[70px] font-handwriting leading-none">
+            Новогодняя елка 2026
           </span>
-          <span class="text-[18px] sm:text-[30px] font-medium">
-            Пришло время вновь пригласить вас встретить с нами наступающий 2026
-            год в яркой и незабываемой атмосфере. Наша праздничная программа
-            включает интерактивные блоки с участием приглашённых ведущих,
+          <span class="mb-[16px] text-[25px] sm:text-[30px] font-oswald font-medium">
+            Корпоративы: 12&ndash;30 декабря
+          </span>
+          <span class="mb-[16px] text-[18px] sm:text-[24px] font-medium">
+            Наша праздничная программа включает интерактивные блоки с участием приглашённых ведущих,
             акробатов и Деда Мороза.
           </span>
-          <span class="text-[18px] sm:text-[30px] font-medium">
-            Давайте проведём этот Новый год вместе, создавая волшебные
+          <span class="text-[30px] sm:text-[50px] font-handwriting leading-[32px] sm:leading-none">
+            Давайте проведём этот Новый&nbsp;год&nbsp;вместе,<br />создавая волшебные
             воспоминания!
           </span>
           <A
@@ -23,7 +24,7 @@ export function NewYearBanner() {
             target="_blank"
             class="btn mt-[30px] text-[20px] font-semibold bg-blue-600"
           >
-            Новогоднее меню
+            Открыть меню
           </A>
         </div>
       </div>

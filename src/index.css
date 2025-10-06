@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-roboto: "Roboto Condensed", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --font-handwriting: "Great Vibes", cursive;
 }
 
 :root {
@@ -94,18 +96,18 @@ button:hover {
 .news-year-banner {
   height: calc(100vh - 80px);
   background-image:
-		linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
 		url("/src/assets/img/new-year-banner.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .news-year-banner {
     height: calc(50vh - 80px);
   }
-}
+} */
 
 .lock-scroll {
   overflow: hidden;

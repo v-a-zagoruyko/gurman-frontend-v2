@@ -15,7 +15,7 @@ export function Nav() {
       <div class="max-w-[1350px] h-[80px] mx-auto px-[16px] sm:px-[32px] flex flex-row items-center sm:space-between">
         <A
           href="/"
-          class="flex flex-1 items-center gap-x-[8px] font-oswald text-[24px]"
+          class="mr-auto flex tems-center gap-x-[8px] font-oswald text-[24px]"
         >
           <IconCrown class="w-[30px] h-[30px] text-amber-500" />
           Ресторан &laquo;Гурман&raquo;
