@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://example.com/</loc>
+		<loc>https://xn----7sbblh9beecscegov.xn--p1ai/</loc>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://example.com/about</loc>
+		<loc>https://xn----7sbblh9beecscegov.xn--p1ai/menu/osnovnoe-menyu</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://xn----7sbblh9beecscegov.xn--p1ai/menu/shaurma</loc>
 		<priority>0.8</priority>
 	</url>
 </urlset>

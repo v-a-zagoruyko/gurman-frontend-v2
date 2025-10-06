@@ -1,14 +1,13 @@
 import { useLocation } from "@solidjs/router";
-import { onMount } from "solid-js";
+import { createEffect } from "solid-js";
 
 export function useYandexMetrika() {
   const location = useLocation();
 
-  onMount(() => {
-    // location.subscribe(() => {
-    //   if (window.ym) {
-    //     window.ym(91491189, "hit", location.pathname);
-    //   }
-    // });
+  createEffect(() => {
+    const path = location.pathname;
+    if (window.ym) {
+      window.ym(91491189, "hit", path);
+    }
   });
 }
