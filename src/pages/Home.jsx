@@ -130,8 +130,8 @@ export function Home() {
         />
       </article>
       <CallbackBanner />
-      {renderInfo}
       {renderMenu}
+      {renderInfo}
       <div class="px-[16px] sm:px-0">
         <CallbackForm />
       </div>

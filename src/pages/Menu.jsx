@@ -1,6 +1,6 @@
 import { createSignal, createMemo, For, Show, createEffect } from "solid-js";
 import { useParams } from "@solidjs/router";
-import { Product, CallbackBanner, CallbackForm } from "components";
+import { Preloader, Product, CallbackBanner, CallbackForm } from "components";
 import { apiFetch } from "api/fetch";
 
 export function Menu() {
@@ -41,8 +41,8 @@ export function Menu() {
   };
 
   return (
-    <Show when={!loading()} fallback={<div>Загрузка...</div>}>
-      <Show when={!error()} fallback={<div>Ошибка: {error()}</div>}>
+    <Show when={!loading()} fallback={<Preloader />}>
+      <Show when={!error()} fallback={<article class="article">Ошибка: {error()}</article>}>
         <article class="article">
           <h1 class="title mb-[16px] sm:mb-[32px] text-center">{name()}</h1>
 
