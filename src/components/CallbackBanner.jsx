@@ -1,6 +1,11 @@
+import { AnimateOnView } from "./AnimateOnView";
+
 export function CallbackBanner() {
   return (
-    <div class="w-full mb-[16px] sm:mb-[32px] bg-neutral-100">
+    <AnimateOnView
+      class="w-full mb-[16px] sm:mb-[32px] bg-neutral-100"
+      animation="animate__slideInUp"
+    >
       <div class="article mt-[16px] sm:mt-[32px]">
         <div class="flex flex-col sm:flex-row items-center justify-between">
           <p class="text-center sm:text-left">
@@ -20,6 +25,6 @@ export function CallbackBanner() {
           </div>
         </div>
       </div>
-    </div>
+    </AnimateOnView>
   );
 }

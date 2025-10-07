@@ -8,7 +8,14 @@ import {
   createEffect,
 } from "solid-js";
 import { useParams } from "@solidjs/router";
-import { Preloader, Product, CallbackBanner, CallbackForm } from "components";
+import {
+  AnimateOnView,
+  Error,
+  Preloader,
+  Product,
+  CallbackBanner,
+  CallbackForm,
+} from "components";
 import { apiFetch } from "api/fetch";
 
 export function Menu() {
@@ -64,14 +71,16 @@ export function Menu() {
 
   return (
     <Show when={!loading()} fallback={<Preloader />}>
-      <Show
-        when={!error()}
-        fallback={<article class="article">Ошибка: {error()}</article>}
-      >
+      <Show when={!error()} fallback={<Error />}>
         <article class="article">
-          <h1 class="title mb-[16px] sm:mb-[32px] text-center">{name()}</h1>
+          <AnimateOnView animation="animate__slideInUp">
+            <h1 class="title mb-[16px] sm:mb-[32px] text-center">{name()}</h1>
+          </AnimateOnView>
 
-          <div class="sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white">
+          <AnimateOnView
+            class="sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white"
+            animation="animate__slideInLeft"
+          >
             <span
               onClick={() => handleCategoryClick(null)}
               class="px-[8px] py-[2px] whitespace-nowrap border-1 border-amber-300 rounded-[8px] cursor-pointer"
@@ -91,16 +100,18 @@ export function Menu() {
                 </span>
               )}
             </For>
-          </div>
+          </AnimateOnView>
 
           <Switch>
             <Match when={params.slug === "osnovnoe-menyu"}>
               <For each={grouped()}>
                 {([category, items]) => (
                   <>
-                    <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
-                      {category}
-                    </p>
+                    <AnimateOnView>
+                      <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
+                        {category}
+                      </p>
+                    </AnimateOnView>
                     <div class="mb-[16px] sm:mb-[32px] grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-x-[8px] sm:gap-x-[32px] gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Card {...p} />}</For>
                     </div>
@@ -112,9 +123,11 @@ export function Menu() {
               <For each={grouped()}>
                 {([category, items]) => (
                   <>
-                    <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
-                      {category}
-                    </p>
+                    <AnimateOnView>
+                      <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
+                        {category}
+                      </p>
+                    </AnimateOnView>
                     <div class="mb-[16px] sm:mb-[32px] grid grid-cols-2 gap-x-[8px] sm:gap-x-[32px] gap-y-[16px] sm:gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Row {...p} />}</For>
                     </div>

@@ -11,7 +11,7 @@ export function Nav() {
   };
 
   return (
-    <nav class="fixed w-full top-0 z-999 bg-white">
+    <nav class="fixed w-full top-0 z-999 bg-white animate__animated animate__slideInDown">
       <div class="max-w-[1350px] h-[80px] mx-auto px-[16px] sm:px-[32px] flex flex-row items-center sm:space-between">
         <A
           href="/"
@@ -58,6 +58,7 @@ export function Nav() {
             </A>
             <A
               href="/new-year"
+              onClick={handleNavToggle}
               target="_blank"
               class="text-[20px] text-blue-600 animation__pulse"
             >
@@ -65,6 +66,7 @@ export function Nav() {
             </A>
             <A
               href="/menu/osnovnoe-menyu"
+              onClick={handleNavToggle}
               class="text-[20px]"
               activeClass="text-amber-500"
             >
@@ -72,13 +74,14 @@ export function Nav() {
             </A>
             <A
               href="/menu/dostavka"
+              onClick={handleNavToggle}
               class="text-[20px]"
               activeClass="text-amber-500"
             >
               🔥 Шаурма & Шашлык
             </A>
           </div>
-          <div class="mt-auto mb-[32px] flex flex-col items-center">
+          <div class="mt-auto mb-[72px] flex flex-col items-center">
             <span class="mb-[16px] info-text text-center">
               Хотите узнать больше или
               <br />

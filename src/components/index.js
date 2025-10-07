@@ -1,6 +1,8 @@
+export { AnimateOnView } from "./AnimateOnView";
 export { CallbackBanner } from "./CallbackBanner";
 export { CallbackForm } from "./CallbackForm";
 export { Footer } from "./Footer";
+export { Error } from "./Error";
 export { Nav } from "./Nav";
 export { NewYearBanner } from "./NewYearBanner";
 export { Preloader } from "./Preloader";

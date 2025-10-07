@@ -1,9 +1,13 @@
 import { A } from "@solidjs/router";
+import { AnimateOnView } from "./AnimateOnView";
 import { Snowfall } from "./Snowfall";
 
 export function NewYearBanner() {
   return (
-    <div class="news-year-banner relative w-full mb-[16px] sm:mb-[32px] py-[16px] sm:py-[-32px] bg-neutral-50">
+    <AnimateOnView
+      class="news-year-banner relative w-full mb-[16px] sm:mb-[32px] py-[16px] sm:py-[-32px] bg-neutral-50"
+      animation="animate__fadeIn"
+    >
       <div class="article h-full pt-[16px] sm:pt-[32px]">
         <Snowfall />
         <div class="relative h-full flex flex-col items-center justify-center text-center text-white z-1">
@@ -31,6 +35,6 @@ export function NewYearBanner() {
           </A>
         </div>
       </div>
-    </div>
+    </AnimateOnView>
   );
 }

@@ -1,6 +1,11 @@
+import { AnimateOnView } from "./AnimateOnView";
+
 export function Footer() {
   return (
-    <footer class="w-full my-[-16px] sm:my-[-32px] py-[16px] sm:py-[-32px] bg-neutral-50">
+    <AnimateOnView
+      class="w-full my-[-16px] sm:my-[-32px] py-[16px] sm:py-[-32px] bg-neutral-50"
+      animation="animate__slideInUp"
+    >
       <div class="article mt-[16px] sm:mt-[32px]">
         <div class="flex flex-col">
           <p class="info-text">
@@ -17,6 +22,6 @@ export function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </AnimateOnView>
   );
 }
