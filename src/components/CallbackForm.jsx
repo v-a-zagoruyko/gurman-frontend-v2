@@ -20,7 +20,7 @@ export function CallbackForm() {
 
   return (
     <div class="mt-[16px] w-full flex flex-col sm:flex-row items-center sm:justify-center sm:gap-x-[8px] gap-y-[8px] sm:gap-y-0">
-      <p class="text-[17px] font-medium">
+      <p class="text-[17px] font-medium leading-none">
         Остались вопросы? Оставьте номер, и мы вам перезвоним
       </p>
       <input

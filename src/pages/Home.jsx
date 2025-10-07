@@ -56,7 +56,7 @@ export function Home() {
           </A>
         </div>
         <div>
-          <A href="/menu/shaurma" class="btn bg-amber-300">
+          <A href="/menu/dostavka" class="btn bg-amber-300">
             Меню на доставку
           </A>
         </div>

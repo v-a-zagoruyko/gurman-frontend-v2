@@ -39,11 +39,11 @@ export function Nav() {
             🥘 Основное меню
           </A>
           <A
-            href="/menu/shaurma"
+            href="/menu/dostavka"
             class="text-[18px]"
             activeClass="text-amber-500"
           >
-            🔥 Шаурма
+            🔥 Шаурма & Шашлык
           </A>
         </div>
         <span onClick={handleNavToggle} class="block sm:hidden">
@@ -71,11 +71,11 @@ export function Nav() {
               🥘 Основное меню
             </A>
             <A
-              href="/menu/shaurma"
+              href="/menu/dostavka"
               class="text-[20px]"
               activeClass="text-amber-500"
             >
-              🔥 Шаурма
+              🔥 Шаурма & Шашлык
             </A>
           </div>
           <div class="mt-auto mb-[32px] flex flex-col items-center">

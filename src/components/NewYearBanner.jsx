@@ -27,7 +27,7 @@ export function NewYearBanner() {
             target="_blank"
             class="btn mt-[30px] text-[20px] font-semibold bg-blue-600"
           >
-            Открыть меню
+            Посмотреть меню
           </A>
         </div>
       </div>

@@ -5,8 +5,8 @@ export function NewYearPdf() {
     <div class="w-full h-screen">
       <iframe
         src={pdfUrl}
+        title="Новогоднее меню ресторана Гурман"
         class="w-full h-full"
-        title="Меню ресторана Гурман"
         style="border: none;"
       />
     </div>

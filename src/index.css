@@ -76,9 +76,11 @@ button {
   cursor: pointer;
 }
 
-a:hover,
-button:hover {
-  opacity: 0.75;
+@media (min-width: 768px) {
+  a:hover,
+  button:hover {
+    opacity: 0.75;
+  }
 }
 
 .nav-mobile {
