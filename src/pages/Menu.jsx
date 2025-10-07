@@ -78,7 +78,7 @@ export function Menu() {
           </AnimateOnView>
 
           <AnimateOnView
-            class="sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white"
+            class="sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white z-1"
             animation="animate__slideInLeft"
           >
             <span
@@ -107,7 +107,7 @@ export function Menu() {
               <For each={grouped()}>
                 {([category, items]) => (
                   <>
-                    <AnimateOnView>
+                    <AnimateOnView animation="animate__slideInUp">
                       <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
                         {category}
                       </p>
@@ -123,7 +123,7 @@ export function Menu() {
               <For each={grouped()}>
                 {([category, items]) => (
                   <>
-                    <AnimateOnView>
+                    <AnimateOnView animation="animate__slideInUp">
                       <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
                         {category}
                       </p>
