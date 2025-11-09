@@ -20,7 +20,7 @@ export function CallbackBanner() {
               +7 (9044) 99-22-99
             </a>
             <a href="tel:+73452217585" class="font-semibold">
-              +7 (3452) 21-75-85
+              +7 (3452) 218-115
             </a>
           </div>
         </div>
