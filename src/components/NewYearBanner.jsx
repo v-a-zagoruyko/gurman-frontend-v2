@@ -43,7 +43,7 @@ export function NewYearBanner() {
           >
             +7 (3452) 218-115
           </a>
-          <span class="hidden sm:block text-[50px] font-handwriting leading-none">
+          <span class="hidden sm:block mt-[32px] text-[50px] font-handwriting leading-none">
             Давайте проведём этот Новый&nbsp;год&nbsp;вместе,
             <br />
             создавая волшебные воспоминания!
