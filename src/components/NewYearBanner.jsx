@@ -5,7 +5,7 @@ import { Snowfall } from "./Snowfall";
 export function NewYearBanner() {
   return (
     <AnimateOnView
-      class="news-year-banner relative w-full mb-[16px] sm:mb-[32px] py-[16px] sm:py-[-32px] bg-neutral-50"
+      class="news-year-banner relative min-h-screen h-full w-full mb-[16px] sm:mb-[32px] py-[16px] sm:py-[-32px] bg-neutral-50"
       animation="animate__fadeIn"
     >
       <div class="article h-full pt-[16px] sm:pt-[32px]">
