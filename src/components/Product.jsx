@@ -2,17 +2,12 @@ import { AnimateOnView } from "./AnimateOnView";
 import defaultImg from "assets/img/default.webp";
 
 function Card(props) {
-  const API_URL = import.meta.env.VITE_API_URL;
-
   return (
     <AnimateOnView
       class="flex flex-col rounded-[8px] bg-neutral-50"
       animation="animate__slideInUp"
     >
-      <img
-        src={`${API_URL}${props.image || defaultImg}`}
-        class="rounded-t-[8px]"
-      />
+      <img src={props.image || defaultImg} class="rounded-t-[8px]" />
       <div class="p-[8px] sm:p-[16px] flex flex-col">
         <p class="mb-[8px] font-oswald text-[17px] sm:text-[20px] leading-none">
           {props.name}
