@@ -7,7 +7,7 @@ function Card(props) {
       class="flex flex-col rounded-[8px] bg-neutral-50"
       animation="animate__slideInUp"
     >
-      <img src={props.image || defaultImg} class="rounded-t-[8px]" />
+      <img src={props.image || defaultImg} class="h-[230px] object-contain rounded-t-[8px] bg-white" />
       <div class="p-[8px] sm:p-[16px] flex flex-col">
         <p class="mb-[8px] font-oswald text-[17px] sm:text-[20px] leading-none">
           {props.name}
