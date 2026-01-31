@@ -78,7 +78,7 @@ export function Menu() {
           </AnimateOnView>
 
           <AnimateOnView
-            class="sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white z-1"
+            class="no-print sticky top-[80px] mb-[16px] pb-[16px] flex items-center gap-x-[16px] overflow-x-auto bg-white z-1"
             animation="animate__slideInLeft"
           >
             <span
@@ -112,7 +112,7 @@ export function Menu() {
                         {category}
                       </p>
                     </AnimateOnView>
-                    <div class="mb-[16px] sm:mb-[32px] grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-x-[8px] sm:gap-x-[32px] gap-y-[32px]">
+                    <div class="menu-grid mb-[16px] sm:mb-[32px] grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-x-[8px] sm:gap-x-[32px] gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Card {...p} />}</For>
                     </div>
                   </>
@@ -128,7 +128,7 @@ export function Menu() {
                         {category}
                       </p>
                     </AnimateOnView>
-                    <div class="mb-[16px] sm:mb-[32px] grid grid-cols-2 gap-x-[8px] sm:gap-x-[32px] gap-y-[16px] sm:gap-y-[32px]">
+                    <div class="menu-grid mb-[16px] sm:mb-[32px] grid grid-cols-2 gap-x-[8px] sm:gap-x-[32px] gap-y-[16px] sm:gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Row {...p} />}</For>
                     </div>
                   </>
@@ -138,12 +138,12 @@ export function Menu() {
           </Switch>
         </article>
 
-        <div class="px-[16px] sm:px-0">
+        <div class="no-print px-[16px] sm:px-0">
           <CallbackForm />
         </div>
 
         <div class="mt-[16px]"></div>
-        <CallbackBanner />
+          <CallbackBanner />
       </Show>
     </Show>
   );

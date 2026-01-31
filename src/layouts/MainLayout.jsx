@@ -11,7 +11,7 @@ export function MainLayout(props) {
     <>
       <div class="w-full min-h-screen">
         <Nav />
-        <div class="mt-[80px] flex flex-col items-center justify-center">
+        <div class="main-content mt-[80px] flex flex-col items-center justify-center">
           {props.children}
         </div>
         <Footer />

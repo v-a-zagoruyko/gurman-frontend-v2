@@ -3,7 +3,7 @@ import { AnimateOnView } from "./AnimateOnView";
 export function CallbackBanner() {
   return (
     <AnimateOnView
-      class="w-full mb-[16px] sm:mb-[32px] bg-neutral-100"
+      class="no-print w-full mb-[16px] sm:mb-[32px] bg-neutral-100"
       animation="animate__slideInUp"
     >
       <div class="article mt-[16px] sm:mt-[32px]">

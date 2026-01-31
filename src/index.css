@@ -142,3 +142,49 @@ button {
     transform: rotate(360deg);
   }
 }
+
+/* Print styles - only applied when printing or exporting to PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  /* Remove top margin when nav is hidden */
+  .main-content {
+    margin-top: 24px !important;
+  }
+
+  /* White background, hide decorative pattern */
+  body {
+    background: white !important;
+  }
+
+  /* Hide title when printing */
+  .article h1 {
+    display: none !important;
+  }
+
+  /* Force visibility (AnimateOnView starts with opacity-0) */
+  .article,
+  .article * {
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: none !important;
+  }
+
+  /* Menu grid: 3 columns */
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Smaller images in print */
+  .menu-grid img {
+    max-height: 140px !important;
+    object-fit: contain !important;
+  }
+
+  /* Optional: avoid page breaks inside product cards */
+  .menu-grid > * {
+    break-inside: avoid;
+  }
+}
