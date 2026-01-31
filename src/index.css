@@ -176,7 +176,10 @@ button {
     max-width: none !important;
   }
 
-  /* Smaller category titles */
+  /* Category section: bottom margin + smaller titles */
+  .category-section {
+    margin-bottom: 16px !important;
+  }
   .category-section p {
     margin-bottom: 6px !important;
     font-size: 18px !important;
@@ -222,6 +225,11 @@ button {
   /* Avoid page breaks inside product cards */
   .menu-grid > * {
     break-inside: avoid;
+  }
+
+  /* Page break every 5 rows (15 items at 3 columns) */
+  .menu-grid > *:nth-child(15n) {
+    break-after: page;
   }
 
   /* Page break before each new category (except the first) */
