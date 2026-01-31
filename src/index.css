@@ -187,4 +187,9 @@ button {
   .menu-grid > * {
     break-inside: avoid;
   }
+
+  /* Page break before each new category (except the first) */
+  .category-section + .category-section {
+    break-before: page;
+  }
 }

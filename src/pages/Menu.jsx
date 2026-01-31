@@ -106,7 +106,7 @@ export function Menu() {
             <Match when={params.slug === "osnovnoe-menyu"}>
               <For each={grouped()}>
                 {([category, items]) => (
-                  <>
+                  <div class="category-section">
                     <AnimateOnView animation="animate__slideInUp">
                       <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
                         {category}
@@ -115,14 +115,14 @@ export function Menu() {
                     <div class="menu-grid mb-[16px] sm:mb-[32px] grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-x-[8px] sm:gap-x-[32px] gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Card {...p} />}</For>
                     </div>
-                  </>
+                  </div>
                 )}
               </For>
             </Match>
             <Match when={params.slug !== "osnovnoe-menyu"}>
               <For each={grouped()}>
                 {([category, items]) => (
-                  <>
+                  <div class="category-section">
                     <AnimateOnView animation="animate__slideInUp">
                       <p class="mb-[16px] sm:mb-[32px] font-oswald text-[24px] text-center">
                         {category}
@@ -131,7 +131,7 @@ export function Menu() {
                     <div class="menu-grid mb-[16px] sm:mb-[32px] grid grid-cols-2 gap-x-[8px] sm:gap-x-[32px] gap-y-[16px] sm:gap-y-[32px]">
                       <For each={items}>{(p) => <Product.Row {...p} />}</For>
                     </div>
-                  </>
+                  </div>
                 )}
               </For>
             </Match>

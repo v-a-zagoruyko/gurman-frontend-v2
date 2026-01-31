@@ -125,7 +125,7 @@ export function Home() {
 
   return (
     <>
-      <NewYearBanner />
+      {/* <NewYearBanner /> */}
       {renderMain}
       <CallbackBanner />
       {renderMenu}
