@@ -181,7 +181,7 @@ button {
     margin-bottom: 16px !important;
   }
   .category-section p {
-    margin-bottom: 6px !important;
+    margin-bottom: 32px !important;
     font-size: 18px !important;
   }
 
@@ -195,7 +195,7 @@ button {
 
   /* Menu grid: 3 columns, compact gaps */
   .menu-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     gap: 24px !important;
     margin-bottom: 12px !important;
   }
@@ -229,7 +229,7 @@ button {
   }
 
   /* Page break every 5 rows (15 items at 3 columns) */
-  .menu-grid > *:nth-child(15n) {
+  .menu-grid > *:nth-child(20n) {
     break-after: page;
   }
 
