@@ -24,13 +24,13 @@ export function Nav() {
           <A href="/" class="text-[18px]" activeClass="text-amber-500" end>
             Главная
           </A>
-          <A
+          {/* <A
             href="/new-year"
             target="_blank"
             class="text-[18px] text-blue-600 animation__pulse"
           >
             ❄️ Новогоднее предложение
-          </A>
+          </A> */}
           <A
             href="/menu/osnovnoe-menyu"
             class="text-[18px]"
@@ -56,14 +56,14 @@ export function Nav() {
             <A href="/" class="text-[20px]" activeClass="text-amber-500" end>
               🏠 Главная
             </A>
-            <A
+            {/* <A
               href="/new-year"
               onClick={handleNavToggle}
               target="_blank"
               class="text-[20px] text-blue-600 animation__pulse"
             >
               ❄️ Новогоднее предложение
-            </A>
+            </A> */}
             <A
               href="/menu/osnovnoe-menyu"
               onClick={handleNavToggle}

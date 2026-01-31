@@ -143,15 +143,20 @@ button {
   }
 }
 
-/* Print styles - only applied when printing or exporting to PDF */
+/* Print styles - optimized for A4 */
 @media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
   .no-print {
     display: none !important;
   }
 
   /* Remove top margin when nav is hidden */
   .main-content {
-    margin-top: 24px !important;
+    margin-top: 0 !important;
   }
 
   /* White background, hide decorative pattern */
@@ -164,6 +169,19 @@ button {
     display: none !important;
   }
 
+  /* Compact article for A4 */
+  .article {
+    padding: 0 8px !important;
+    margin-bottom: 0 !important;
+    max-width: none !important;
+  }
+
+  /* Smaller category titles */
+  .category-section p {
+    margin-bottom: 6px !important;
+    font-size: 18px !important;
+  }
+
   /* Force visibility (AnimateOnView starts with opacity-0) */
   .article,
   .article * {
@@ -172,18 +190,36 @@ button {
     animation: none !important;
   }
 
-  /* Menu grid: 3 columns */
+  /* Menu grid: 3 columns, compact gaps */
   .menu-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+    margin-bottom: 12px !important;
   }
 
-  /* Smaller images in print */
+  /* Compact images for A4 */
   .menu-grid img {
-    max-height: 140px !important;
+    max-height: 85px !important;
     object-fit: contain !important;
   }
 
-  /* Optional: avoid page breaks inside product cards */
+  /* Compact card padding and fonts */
+  .menu-grid > div {
+    padding: 4px !important;
+  }
+  .menu-grid > div > div {
+    padding: 2px 4px !important;
+  }
+  .menu-grid p {
+    font-size: 11px !important;
+    margin-bottom: 2px !important;
+    line-height: 1.2 !important;
+  }
+  .menu-grid .font-oswald {
+    font-size: 13px !important;
+  }
+
+  /* Avoid page breaks inside product cards */
   .menu-grid > * {
     break-inside: avoid;
   }
