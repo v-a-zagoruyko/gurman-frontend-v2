@@ -196,13 +196,14 @@ button {
   /* Menu grid: 3 columns, compact gaps */
   .menu-grid {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 6px !important;
+    gap: 24px !important;
     margin-bottom: 12px !important;
   }
 
   /* Compact images for A4 */
   .menu-grid img {
-    max-height: 85px !important;
+    margin-bottom: 12px !important;
+    max-height: 90px !important;
     object-fit: contain !important;
   }
 
@@ -215,7 +216,7 @@ button {
   }
   .menu-grid p {
     font-size: 11px !important;
-    margin-bottom: 2px !important;
+    margin-bottom: 20px !important;
     line-height: 1.2 !important;
   }
   .menu-grid .font-oswald {
